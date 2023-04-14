@@ -63,6 +63,8 @@ class Quote
     /** @var  string */
     protected $order;
 
+    protected $master;
+
     const STATUS_PENDING = "pending";
     const STATUS_TO_INVOICE = "to_invoice";
     const STATUS_INVOICED = "invoiced";

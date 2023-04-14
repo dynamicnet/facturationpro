@@ -33,4 +33,3 @@ class AccountTest extends TestCase
         return $this->firms;
     }
 }
-?>

@@ -49,6 +49,8 @@ class Customer
     /** @var  string */
     protected $order;
 
+    protected $master;
+
     const ORDER_LAST_INVOICE = 'last_invoice';
     const ORDER_LAST_PAID = 'last_paid';
 
@@ -83,7 +85,7 @@ class Customer
             "with_sepa" => $this->with_sepa
         );
         return $this->master->get($this->firm,$this->url,$id,$this->entity,"json",$params);
-    }    
+    }
 
     public function post(\FacturationPro\Entity\Customer $customer)
     {

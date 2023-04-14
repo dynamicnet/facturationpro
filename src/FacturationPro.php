@@ -15,7 +15,22 @@ class FacturationPro
     public $currentIdFirm;
     public $apiUrl = 'https://www.facturation.pro/';
     public $parser;
+    public $serializer;
     public $errorDisplay;
+
+    public $account;
+    public $asset;
+    public $category;
+    public $customer;
+    public $followup;
+    public $invoice;
+    public $order;
+    public $product;
+    public $purchase;
+    public $quote;
+    public $supplier;
+    public $invoiceQuote;
+    public $refund;
 
     const SORT_DESC = "desc";
     const SORT_ASC = "asc";

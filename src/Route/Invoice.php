@@ -76,6 +76,8 @@ class Invoice
     /** @var  string */
     protected $order;
 
+    protected $master;
+
     CONST ORDER_CUSTOMER = "customer";
     CONST ORDER_PAID = "paid";
     CONST ORDER_TOTAL = "total";

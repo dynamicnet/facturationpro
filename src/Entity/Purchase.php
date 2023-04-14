@@ -631,4 +631,3 @@ class Purchase {
         return $this;
     }
 }
-?>

@@ -170,4 +170,3 @@ class Firm {
         return $this->activity_started_on;
     }
 }
-?>

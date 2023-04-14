@@ -27,6 +27,9 @@ class Asset
     /** @var  string */
     protected $order;
 
+    protected $master;
+    protected $entity;
+
     const ORDER_TITLE = 'title';
     const ORDER_SIZE = 'size';
 
@@ -48,7 +51,7 @@ class Asset
                 "quote_id" => $this->quote->getId()
             );
         return $this->master->getAll($this->firm,$this->url, $this->entity,$params);
-    }    
+    }
 
     public function get($id)
     {

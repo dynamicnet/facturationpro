@@ -80,4 +80,3 @@ class Followup {
         return $this;
     }
 }
-?>

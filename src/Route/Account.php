@@ -18,6 +18,8 @@ class Account
     /** @var string */
     protected $entity;
 
+    protected $master;
+
     public function __construct(\FacturationPro\FacturationPro $master)
     {
         $this->master = $master;

@@ -62,6 +62,8 @@ class Customer {
     /** @var \Category */
     protected $category;
 
+    protected $category_id;
+
     /** @var string */
 	protected $account_code;
 
@@ -98,6 +100,8 @@ class Customer {
     /** @var integer */
 	protected $validity;
 
+    protected $invoice_email;
+
     /** @var \DateTime */
 	protected $last_invoiced_on;
 
@@ -118,6 +122,10 @@ class Customer {
 
     /** @var string */
 	protected $vat_exemption_other;
+
+	protected $vat_exemption;
+
+	protected $vat_country;
 
     /** @var string */
 	protected $sepa_iban;
@@ -943,4 +951,3 @@ class Customer {
         return $this;
     }
 }
-?>

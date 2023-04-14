@@ -70,6 +70,9 @@ class Purchase
     /** @var string */
     protected $periodType;
 
+    protected $master;
+    protected $entity;
+
     CONST ORDER_PAID = "paid";
     CONST ORDER_TOTAL = "total";
     CONST ORDER_TERM = "term";

@@ -39,4 +39,3 @@ class Account {
         return $this->firms;
     }
 }
-?>

@@ -783,5 +783,3 @@ class Quote
         return $this->title;
     }
 }
-
-?>

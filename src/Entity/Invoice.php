@@ -14,6 +14,8 @@ class Invoice {
  	/** @var  integer */
  	protected $customer_id;
 
+ 	protected $customer_identity;
+
  	/** @var  string */
  	protected $title;
 
@@ -157,6 +159,40 @@ class Invoice {
 
     /** @var Item[] */
     protected $items;
+
+    protected $vat_exemption_reason;
+
+    protected $vat_exemption_other;
+
+    protected $exchange_rate;
+
+    protected $estimated_rate;
+
+    protected $activity_title;
+
+    protected $purchase_number;
+
+    protected $public_download_url;
+
+    protected $files;
+
+    protected $delivery_on;
+
+    protected $full_invoice_ref;
+
+    protected $paid_in_main_currency;
+
+    protected $estimated_total_in_main_currency;
+
+    protected $overdue_at;
+
+    protected $settlements;
+
+    protected $recurring_invoice_id;
+
+    protected $estimated_total_euro_paid;
+
+    protected $file_assets;
 
     /**
      * @return int
@@ -980,4 +1016,3 @@ class Invoice {
         return $this;
     }
 }
-?>

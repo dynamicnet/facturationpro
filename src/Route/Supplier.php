@@ -29,12 +29,15 @@ class Supplier
 
     /** @var bool **/
     protected $with_sepa;
-    
+
     /** @var string **/
     protected $sort;
 
     /** @var string **/
     protected $order;
+
+    protected $master;
+    protected $entity;
 
     public function __construct(\FacturationPro\FacturationPro $master)
     {
@@ -54,7 +57,7 @@ class Supplier
             "order" => $this->order
         );
         return $this->master->getAll($this->firm,$this->url, $this->entity,$params);
-    }    
+    }
 
     public function get($id)
     {
@@ -128,7 +131,7 @@ class Supplier
         $this->with_sepa = $with_sepa;
         return $this;
     }
-    
+
     /**
      * @param string $sort
      * @return Supplier

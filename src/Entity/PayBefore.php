@@ -13,7 +13,7 @@ class PayBefore
     protected $master;
 
     /** @var  string */
-    protected $refence;
+    protected $reference;
 
     /** @var  string */
     protected $title;

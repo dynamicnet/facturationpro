@@ -24,6 +24,9 @@ class Category
     /** @var string **/
     protected $status;
 
+    protected $master;
+    protected $entity;
+
     public function __construct(\FacturationPro\FacturationPro $master)
     {
         $this->master = $master;
@@ -38,7 +41,7 @@ class Category
             "status" => $this->status
         );
         return $this->master->getAll($this->firm,$this->url, $this->entity,$params);
-    }    
+    }
 
     public function get($id)
     {

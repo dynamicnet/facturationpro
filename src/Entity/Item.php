@@ -46,6 +46,10 @@ class Item
     /** @var string */
     protected $_destroy;
 
+    protected $measure;
+
+    protected $sap_nature;
+
     /**
      * @return string
      */
@@ -273,5 +277,3 @@ class Item
         return $this;
     }
 }
-
-?>

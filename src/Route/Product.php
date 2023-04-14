@@ -36,6 +36,9 @@ class Product
     /** @var  string */
     protected $order;
 
+    protected $master;
+    protected $entity;
+
     const ORDER_REF = 'ref';
 
     public function __construct(\FacturationPro\FacturationPro $master)
@@ -56,7 +59,7 @@ class Product
             "order" => $this->order
         );
         return $this->master->getAll($this->firm,$this->url, $this->entity, $params);
-    }    
+    }
 
     public function get($id)
     {

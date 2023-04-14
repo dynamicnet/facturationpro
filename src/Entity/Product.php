@@ -355,4 +355,3 @@ class Product {
         return $this;
     }
 }
-?>
